@@ -219,3 +219,6 @@ __marimo__/
 
 # Microsoft Office / Excel temporary lock files
 ~$*
+
+# Tableau temporary files
+.~*.twbr
