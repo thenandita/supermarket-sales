@@ -5,6 +5,8 @@
   <document-format-change-manifest>
     <AnimationOnByDefault />
     <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <SchemaViewerObjectModel />
     <SheetIdentifierTracking />
     <WindowsPersistSimpleIdentifiers />
   </document-format-change-manifest>
@@ -12,7 +14,22 @@
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
   </preferences>
-  <datasources />
+  <datasources>
+    <datasource caption='supermarket-analysis' inline='true' name='federated.1fs3llc0el8k4o195nmdt130t3ab' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='supermarket-analysis' name='excel-direct.0tnu5nq10ek906141c19s03ry274'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/nandita/PycharmProjects/supermarket-sales/data/supermarket-analysis.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph />
+    </datasource>
+  </datasources>
   <worksheets>
     <worksheet name='Sheet 1'>
       <table>
@@ -35,7 +52,7 @@
       <simple-id uuid='{BCA68FEF-C44A-4C17-8123-B348C0CB1FC2}' />
     </worksheet>
   </worksheets>
-  <windows>
+  <windows source-height='30'>
     <window class='worksheet' maximized='true' name='Sheet 1'>
       <cards>
         <edge name='left'>
