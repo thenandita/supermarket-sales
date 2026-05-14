@@ -72,16 +72,7 @@ ORDER BY avg_rating DESC;
 
 --------------------------------------------------------------------------------------------------------------------------
 
--- 8. Duplicate invoice check (expect zero rows if data is clean)
-
-SELECT invoice_id, COUNT(*) AS n
-FROM supermarket_sales
-GROUP BY invoice_id
-HAVING COUNT(*) > 1;
-
---------------------------------------------------------------------------------------------------------------------------
-
--- 9. Gross margin summary
+-- 8. Gross margin summary
 
 SELECT
   ROUND(SUM(gross_income)::numeric, 2) AS total_gross_income,
