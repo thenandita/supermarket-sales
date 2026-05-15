@@ -34,3 +34,7 @@ The objective of this project is to help retail businesses make data-driven deci
 - Food and beverages category performed best across branches
 - Member customers contributed more revenue compared to normal customers
 - Monthly sales trends showed consistent business growth
+
+## Tableau Dashboard
+![img.png](img.png)
+https://public.tableau.com/app/profile/nandita.roy5556/viz/book-1_17788850380940/SalesAnalysisDashboard?publish=yes
